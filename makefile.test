@@ -1,0 +1,11 @@
+CFLAGS=-g
+CC=g++
+#INC包含gtest.h libgtest.a
+INC=-I./include -L./lib
+LIB=-lgtest -lpthread
+
+all:
+            ${CC} ${CFLAGS} -c ./is.cpp 
+            ${CC} ${CFLAGS} ${INC} -o test test.cpp  ./is.o ${LIB}
+clean:
+            rm -f ./is.o ./test
