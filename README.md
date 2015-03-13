@@ -75,6 +75,11 @@ is.above(0, "1")
 //是否在指定集合内
 is.in_set("0123456789", "69")
 ==> true
+
+//是否在指定集合内
+string strs = {"string", "curve"};
+is.in_set(strs, "string")
+==> true
 ```
 
 ## 检验bool
